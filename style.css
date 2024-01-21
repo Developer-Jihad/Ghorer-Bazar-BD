@@ -1,0 +1,82 @@
+.logo img {
+  height: 50px;
+  margin: 20px 0px;
+}
+
+.topBar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile,
+.cart,
+.language {
+  margin-left: 30px;
+  align-items: center;
+}
+
+#search-box {
+  width: 50%;
+  height: 35px;
+  border-color: orange;
+  border-radius: 5px;
+}
+
+#search-box::placeholder {
+  color: rgb(194, 191, 191);
+}
+.carousel {
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+
+.poster {
+  width: 32.5%;
+  overflow: hidden;
+}
+.banner {
+  width: 65%;
+  overflow: hidden;
+}
+.banner-img,
+.poster-img {
+  transform: scale(1.1);
+  transition: 0.25s transform ease-out;
+}
+/* .poster-img:hover {
+  transform: scale(1.05);
+} */
+.poster-img:hover,
+.banner-img:hover {
+  transform: scale(1.05);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.single-product {
+  border: 2px solid rgb(255, 187, 0);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+.single-product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Footer Area */
+
+footer {
+  align-items: flex-start;
+  width: 75%;
+}
+footer > div {
+  padding: 30px;
+}
+#footer-left:first-child {
+  flex-grow: 1;
+  background-color: blue;
+}
